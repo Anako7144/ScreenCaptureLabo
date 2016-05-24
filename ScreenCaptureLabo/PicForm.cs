@@ -20,6 +20,7 @@ namespace CapMaster
 
         public void SetPicture(string path)
         {
+            if (!File.Exists(path)) return;
             using (FileStream fs = File.OpenRead(path))
             {
                 pictureBox1.Image = Image.FromStream(fs);

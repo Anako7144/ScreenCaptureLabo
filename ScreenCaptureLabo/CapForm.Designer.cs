@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.AppListBox = new System.Windows.Forms.ListBox();
+            this.ImageListBox = new System.Windows.Forms.ListBox();
             this.capButton = new System.Windows.Forms.Button();
             this.timerIntervalNum = new System.Windows.Forms.NumericUpDown();
             this.timerCheckBox = new System.Windows.Forms.CheckBox();
@@ -41,25 +41,25 @@
             ((System.ComponentModel.ISupportInitialize)(this.timerIntervalNum)).BeginInit();
             this.SuspendLayout();
             // 
-            // AppListBox
+            // ImageListBox
             // 
-            this.AppListBox.FormattingEnabled = true;
-            this.AppListBox.ItemHeight = 12;
-            this.AppListBox.Location = new System.Drawing.Point(12, 12);
-            this.AppListBox.Name = "AppListBox";
-            this.AppListBox.Size = new System.Drawing.Size(260, 172);
-            this.AppListBox.TabIndex = 0;
-            this.AppListBox.SelectedIndexChanged += new System.EventHandler(this.AppListBox_SelectedIndexChanged);
-            this.AppListBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.AppListBox_KeyDown);
+            this.ImageListBox.FormattingEnabled = true;
+            this.ImageListBox.ItemHeight = 12;
+            this.ImageListBox.Location = new System.Drawing.Point(12, 12);
+            this.ImageListBox.Name = "ImageListBox";
+            this.ImageListBox.Size = new System.Drawing.Size(260, 172);
+            this.ImageListBox.TabIndex = 0;
+            this.ImageListBox.SelectedIndexChanged += new System.EventHandler(this.ImageListBox_SelectedIndexChanged);
+            this.ImageListBox.KeyDown += new System.Windows.Forms.KeyEventHandler(this.ImageListBox_KeyDown);
             // 
             // capButton
             // 
             this.capButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.capButton.Location = new System.Drawing.Point(199, 190);
+            this.capButton.Location = new System.Drawing.Point(185, 190);
             this.capButton.Name = "capButton";
-            this.capButton.Size = new System.Drawing.Size(73, 23);
-            this.capButton.TabIndex = 1;
-            this.capButton.Text = "キャプチャ";
+            this.capButton.Size = new System.Drawing.Size(87, 23);
+            this.capButton.TabIndex = 3;
+            this.capButton.Text = "キャプチャ (&c)";
             this.capButton.UseVisualStyleBackColor = false;
             this.capButton.Click += new System.EventHandler(this.capButton_Click);
             // 
@@ -93,7 +93,7 @@
             this.timerCheckBox.Location = new System.Drawing.Point(12, 190);
             this.timerCheckBox.Name = "timerCheckBox";
             this.timerCheckBox.Size = new System.Drawing.Size(76, 22);
-            this.timerCheckBox.TabIndex = 3;
+            this.timerCheckBox.TabIndex = 1;
             this.timerCheckBox.Text = "定期ｷｬﾌﾟﾁｬ";
             this.timerCheckBox.UseVisualStyleBackColor = false;
             this.timerCheckBox.CheckedChanged += new System.EventHandler(this.timerCheckBox_CheckedChanged);
@@ -120,7 +120,7 @@
             this.EndTextBox.Location = new System.Drawing.Point(139, 218);
             this.EndTextBox.Name = "EndTextBox";
             this.EndTextBox.Size = new System.Drawing.Size(44, 19);
-            this.EndTextBox.TabIndex = 4;
+            this.EndTextBox.TabIndex = 5;
             this.EndTextBox.Text = "1";
             // 
             // EndLabel
@@ -166,7 +166,7 @@
             this.Controls.Add(this.timerCheckBox);
             this.Controls.Add(this.timerIntervalNum);
             this.Controls.Add(this.capButton);
-            this.Controls.Add(this.AppListBox);
+            this.Controls.Add(this.ImageListBox);
             this.Name = "CapForm";
             this.Text = "キャプチャ";
             ((System.ComponentModel.ISupportInitialize)(this.timerIntervalNum)).EndInit();
@@ -177,7 +177,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ListBox AppListBox;
+        private System.Windows.Forms.ListBox ImageListBox;
         private System.Windows.Forms.Button capButton;
         private System.Windows.Forms.NumericUpDown timerIntervalNum;
         private System.Windows.Forms.CheckBox timerCheckBox;
